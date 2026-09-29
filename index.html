@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAGE-KEN 影拳 · World Tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #0a0a12; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 50% 40%, #1a1030 0%, #0a0a12 70%);
+    user-select: none;
+  }
+  #game {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #000;
+    box-shadow: 0 0 0 4px #1c1c2e, 0 0 40px rgba(255, 80, 120, .25);
+  }
+  #hint {
+    position: fixed; bottom: 8px; left: 0; right: 0; text-align: center;
+    color: #8a8aa8; font: 11px 'Press Start 2P', monospace; letter-spacing: 1px;
+    pointer-events: none; opacity: .8;
+  }
+  /* preload the font so the canvas can use it */
+  #fontloader { position: absolute; left: -9999px; top: -9999px; font-family: 'Press Start 2P'; }
+</style>
+</head>
+<body>
+<span id="fontloader">.</span>
+<canvas id="game"></canvas>
+<div id="hint">FLECHAS: mover / profundidad · ESPACIO: saltar · Z: puño · X: patada · C: especial · SHIFT: bloquear · ENTER: ok</div>
+<script src="game.js"></script>
+</body>
+</html>
