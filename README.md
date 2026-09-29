@@ -2,7 +2,7 @@
 
 Juego de peleas en **pixel art** de estilo japonés, jugador contra la computadora,
 hecho en HTML5 Canvas y JavaScript puro (sin librerías, sin instalación).
-
+[COMABATE](https://geekrovira.github.io/combate/)
 ## Cómo jugar
 
 Abre `index.html` en Chrome, Edge o Firefox (doble clic basta).
